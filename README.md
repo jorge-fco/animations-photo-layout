@@ -4,10 +4,11 @@ Animations for photo layout.
 ### 📎 Resources.
 - minireset.css v0.0.6
 - locomotive-scroll v4.1.1
-- FontAwesome Version 5.15.3 
+- FontAwesome Version 5.15.3
+- [Unsplash](https://unsplash.com/)
 
 ### 📌 Inspiration.
-- https://toldbyshift.com/
+- [toldbyshift.com](https://toldbyshift.com/)
 - [numbered.studio](https://numbered.studio/about)
 - [themarcus.com](https://themarcus.com/)
 - [garoaskincare.com](https://garoaskincare.com/)

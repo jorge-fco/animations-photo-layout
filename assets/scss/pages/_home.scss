@@ -31,6 +31,16 @@
 	padding-top: 25%;
 	overflow: hidden;
 	background-color: $color-accent;
+
+	// Animation
+	clip-path: polygon(50% 20%,50% 20%,50% 80%,50% 80%);
+	transition: clip-path 1.5s cubic-bezier(.395,0,.065,1.005),transform 2s cubic-bezier(.395,0,.065,1.005),-webkit-clip-path 1.5s cubic-bezier(.395,0,.065,1.005);
+
+	// Animation
+	&.is-animation{
+		clip-path: polygon(100% 0,0 0,0 100%,100% 100%);
+		transition: clip-path 1.5s cubic-bezier(.395,0,.065,1.005),transform 2s cubic-bezier(.395,0,.065,1.005),-webkit-clip-path 1.5s cubic-bezier(.395,0,.065,1.005);
+	}
 }
 
 .page__about__image{
@@ -57,11 +67,53 @@
 .page__items__title{
 	width: 100%;
 	position: relative;
+	margin-bottom: 4em;
 
 	h2{
 		font-size: calRem(34px);
 		text-transform: uppercase;
-		margin-bottom: 4em;
+		margin-bottom: 16px;
+		position: relative;
+	}
+
+	button{
+		width: auto;
+		border: 1px solid transparent;
+		border-radius: 0px;
+		text-align: left;
+		padding-top: 6px;
+		padding-bottom: 6px;
+		padding-left: 0px;
+		padding-right: 0px;
+		position: relative;
+		margin-top: 25px;
+		text-decoration: none;
+		vertical-align: middle;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		user-select: none;
+		background-color: transparent;
+
+		&:hover{
+			text-decoration: none;
+			border: 1px solid transparent;
+			background-color: transparent;
+
+			svg{
+				transition: all 0.5s cubic-bezier(.41,0,.13,1.005);
+				transform: matrix(1, 0, 0, 1, 0,  -10) rotate(90deg);
+			}
+		}
+
+		svg{
+			width: 34px;
+			fill: none;
+			stroke: black;
+			transform: rotate(90deg);
+			position: relative;
+			transition: all 0.5s cubic-bezier(.41,0,.13,1.005);
+		}
 	}
 }
 
@@ -75,10 +127,21 @@
 }
 
 .page__item{
+	cursor: pointer;
 	height: 0px;
 	position: relative;
 	overflow: hidden;
 	background-color: $color-accent;
+
+	// Animation
+	clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+	transition: all .5s cubic-bezier(.67,0,.285,1);
+
+	&:hover{
+		// Animation
+		clip-path: polygon(5% 10%,95% 0,95% 90%,5% 95%);
+		transition: all .5s cubic-bezier(.67,0,.285,1);
+	}
 
 	&.item--1{
 		width: 33.33333%;
@@ -91,8 +154,8 @@
 	}
 	&.item--3{
 		width: 33.33333%;
-		padding-top: 50%;
 		margin: 8em 0 0 auto;
+		padding-top: 50%;
 	}
 	&.item--4{
 		width: 33.33333%;

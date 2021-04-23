@@ -3,18 +3,22 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Animations photo layout</title>
 
 	<!--CSS-->
-	<link rel="stylesheet" href="assets/dist/main.min.css?v=0.00">
+	<link rel="stylesheet" href="assets/dist/main.min.css?v=0.01">
 </head>
 <body>
+	<!--LOGO-->
 	<div class="header__logo">
 		<a href="#">
 			<span></span>
 		</a>
 	</div>
+	<!--LOGO-->
 
+	<!--CART-->
 	<div class="header__cart">
 		<button type="button" class="button">
 			<span>Bag</span>
@@ -23,8 +27,9 @@
 			</svg>
 		</button>
 	</div>
+	<!--CART-->
 
-	<main class="page" data-scroll-container>
+	<main class="page js-home" data-scroll-container>
 		<!--ABOUT-->
 		<section class="page__about" data-scroll-section>
 			<div class="layout">
@@ -35,10 +40,10 @@
 				<!--TEXT-->
 
 				<!--IMAGE-->
-				<div class="page__about__thumb" data-scroll data-scroll-speed="2" data-scroll-position="top">
+				<div class="page__about__thumb js-page-about-thumb" data-scroll data-scroll-speed="2" data-scroll-position="top">
 					<div class="page__about__image">
 						<figure>
-							<img src="https://images.unsplash.com/photo-1584308972272-9e4e7685e80f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1600&q=80" alt="website">
+							<img width="auto" height="auto" src="https://images.unsplash.com/photo-1584308972272-9e4e7685e80f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1600&q=80" alt="website">
 						</figure>
 					</div>
 				</div>
@@ -47,10 +52,18 @@
 		</section>
 		<!--ABOUT-->
 
+		<!--ITEMS-->
 		<section class="page__items" data-scroll-section>
 			<div class="layout">
 				<div class="page__items__title">
 					<h2>MORE WORKS</h2>
+					<button type="button">
+						<svg viewBox="0 0 62 28" xmlns="http://www.w3.org/2000/svg">
+						<path d="M61 13.5555L9.53674e-07 13.5555" />
+						<path d="M61 13.5555C55.7284 15.3127 45.1852 20.4839 45.1852 27.1111"/>
+						<path d="M61 13.5555C55.7284 11.7983 45.1852 6.62715 45.1852 -1.2597e-05"/>
+						</svg>
+					</button>
 				</div>
 				<div class="page__row" role="row">
 					<div class="page__column">
@@ -71,6 +84,11 @@
 				</div>
 			</div>
 		</section>
+		<!--ITEMS-->
+
+		<section>
+			
+		</section>
 	</main>
 
 	<footer class="">
@@ -86,7 +104,7 @@
 
 	<!--J A V A S C R I P T-->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="assets/dist/vendors.min.js?v=" type="text/javascript" defer></script>
-	<script src="assets/dist/app.min.js?v=" type="text/javascript" defer></script>
+	<script src="assets/dist/vendors.min.js?v=0.01" type="text/javascript" defer></script>
+	<script src="assets/dist/app.min.js?v=0.01" type="text/javascript" defer></script>
 </body>
 </html>
